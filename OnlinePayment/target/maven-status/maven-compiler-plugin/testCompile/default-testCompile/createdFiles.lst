@@ -1,0 +1,5 @@
+StepsFile\defnSteps.class
+runnerClass\TestRunner.class
+Hooks\hooks.class
+Pages\homePage.class
+Pages\loginPage.class
