@@ -33,6 +33,9 @@ public class loginPage {
 
     @FindBy(xpath="//*[contains(text(),' Logged in as ')]")
     WebElement Userlogin;
+
+    @FindBy(xpath="//a[contains(text(),'Logout')]")
+    WebElement logout;
     
     public void signinProcess(){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50));
@@ -52,6 +55,11 @@ public class loginPage {
         wait.until(ExpectedConditions.textToBePresentInElement(Userlogin, "Logged in as Franklin"));
         
         
+     }
+
+     public void logoutProcess(){
+        logout.click();
+
      }
 
     

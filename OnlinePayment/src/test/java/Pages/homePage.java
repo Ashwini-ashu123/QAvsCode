@@ -16,7 +16,9 @@ public class homePage {
 
     WebDriver driver;
 
+
     public homePage(WebDriver driver){
+        
         this.driver = driver;
         driver.manage().window().maximize();
         PageFactory.initElements(driver,this);
@@ -57,6 +59,8 @@ public class homePage {
         Assert.assertTrue(prodCount > 0, "No products found on home page");
         System.out.println("Products are visible on the home page");
         }
+
+        
     
     }
 
