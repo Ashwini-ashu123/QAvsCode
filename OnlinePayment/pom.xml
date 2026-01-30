@@ -23,6 +23,7 @@
         </dependency>
 
         <!-- Cucumber -->
+         
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
@@ -37,10 +38,10 @@
 
         <!-- TestNG -->
         <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>7.8.0</version>
-            <scope>test</scope>
+        <groupId>org.testng</groupId>
+        <artifactId>testng</artifactId>
+        <version>7.9.0</version>
+        <scope>test</scope>
         </dependency>
 
         <!-- WebDriver Manager -->
@@ -56,6 +57,20 @@
             <artifactId>selenium-java</artifactId>
             <version>4.17.0</version>
         </dependency>
+
+        <dependency>
+        <groupId>io.rest-assured</groupId>
+        <artifactId>rest-assured</artifactId>
+        <version>5.4.0</version>
+        </dependency>
+
+        <dependency>
+        <groupId>io.rest-assured</groupId>
+        <artifactId>json-path</artifactId>
+        <version>5.4.0</version>
+        </dependency>
+
+
     </dependencies>
 
     <build>

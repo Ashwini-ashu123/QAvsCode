@@ -1,11 +1,12 @@
 Feature: Payment Demo Process
 
+@UITesting
 Scenario: Login to the e-commerce application
 Given Navigate to the Url for e-commerce application
 Then Click on the sign in button and fill the username and password
 And verify the user is logged in successfully
 
-@HomePage
+@HomePage@UITesting
 Scenario: Verify the home page is having the products
 Given Navigate to the Url for e-commerce application
 Then Click on the sign in button and fill the username and password
@@ -13,7 +14,7 @@ And verify the user is logged in successfully
 Then verify the home page is having the 'CATEGORY' 'BRANDS' and 'FEATURES ITEMS' on the home page
 And verify the user is able to see the products on the home page
 
-@KidsDressPurchase
+@KidsDressPurchase@UITesting
 Scenario: Login - Kids dress purchase and payment process - logout
 Given Navigate to the Url for e-commerce application
 Then Click on the sign in button and fill the username and password
@@ -29,7 +30,7 @@ Then verify the user is in "Payment" page and complete the payment process
 And verify the order is placed successfully and download the invoice
 Then Logout from the application
 
-@MenDressPurchase
+@MenDressPurchase@UITesting
 Scenario: Login - Men dress purchase and payment process - logout
 Given Navigate to the Url for e-commerce application
 Then Click on the sign in button and fill the username and password
@@ -45,7 +46,7 @@ Then verify the user is in "Payment" page and complete the payment process
 And verify the order is placed successfully and download the invoice
 Then Logout from the application
 
-@WomenenDressPurchase
+@WomenenDressPurchase@UITesting
 Scenario: Login - Women dress purchase and payment process - logout
 Given Navigate to the Url for e-commerce application
 Then Click on the sign in button and fill the username and password
